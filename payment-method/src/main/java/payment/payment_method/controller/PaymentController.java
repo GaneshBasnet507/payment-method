@@ -12,7 +12,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class PaymentController {
 
     private final String ESEWA_URL = "https://rc-epay.esewa.com.np/api/epay/main/v2/form"; // test URL
-    private final String SECRET_KEY = "8gBm/:&EnhH.1/q"; // UAT secret key
+    private final String SECRET_KEY = "8gBm/:&EnhH.1/q";
 
     @GetMapping("/payment")
     public String home() {
