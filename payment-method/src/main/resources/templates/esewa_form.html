@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body onload="document.forms['esewaForm'].submit()">
+
+<form name="esewaForm" th:action="${esewa_url}" method="POST">
+    <input type="hidden" name="amount" th:value="${amount}">
+    <input type="hidden" name="tax_amount" th:value="${tax_amount}">
+    <input type="hidden" name="total_amount" th:value="${total_amount}">
+    <input type="hidden" name="transaction_uuid" th:value="${transaction_uuid}">
+    <input type="hidden" name="product_code" th:value="${product_code}">
+    <input type="hidden" name="product_service_charge" th:value="${product_service_charge}">
+    <input type="hidden" name="product_delivery_charge" th:value="${product_delivery_charge}">
+    <input type="hidden" name="success_url" th:value="${success_url}">
+    <input type="hidden" name="failure_url" th:value="${failure_url}">
+    <input type="hidden" name="signed_field_names" th:value="${signed_field_names}">
+    <input type="hidden" name="signature" th:value="${signature}">
+</form>
+
+<p>Redirecting to eSewa...</p>
+
+</body>
+</html>

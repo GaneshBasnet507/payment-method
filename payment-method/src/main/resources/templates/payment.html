@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Choose Payment Method</h1>
+<form action="/pay-esewa" method="POST">
+    Amount: <input type="number" name="amount" value="100" required><br>
+    Transaction ID: <input type="text" name="transactionUuid" value="123-001" required><br>
+    <button type="submit">Pay with eSewa</button>
+</form>
+<br>
+<form action="/pay-connectips" method="POST">
+    Amount: <input type="number" name="amount" value="100" required><br>
+    <button type="submit">Pay with ConnectIPS</button>
+</form>
+</body>
+</html>
